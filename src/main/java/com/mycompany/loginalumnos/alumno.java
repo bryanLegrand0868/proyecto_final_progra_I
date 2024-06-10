@@ -4,13 +4,15 @@
  */
 package com.mycompany.loginalumnos;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
  *
  * @author bryanlegrand
  */
-public class alumno {
+public class alumno implements Serializable {
+    
     String nombre;
     String apellido;
     String usuario;
@@ -19,6 +21,11 @@ public class alumno {
     public ArrayList<Clase> claseAsignada = new ArrayList<>();
     public ArrayList<Integer> notasFinales = new ArrayList<>();
 
+    public alumno() {
+        
+    }
+    
+    
     /**
      * @return the nombre
      */

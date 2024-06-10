@@ -95,14 +95,6 @@ public class Login extends javax.swing.JFrame {
         }
         else{
             boolean usuarioEncontrado = false;
-            for(Admin a: Loginalumnos.mainpage){
-                if(a.getPassword().equals(password) && a.getUsuario().equals(usuario)){
-                    Admin bienvenida = new Admin(a);
-                    bienvenida.setVisible(true);
-                    usuarioEncontrado = true;
-                    break;
-                }
-            }
             if(!usuarioEncontrado){
                 for(Profesor profesorNuevo : Loginalumnos.usuarios){
                     if(profesorNuevo.getPasswordChars().equals(password) && profesorNuevo.getUsuario().equals(usuario)){

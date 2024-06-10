@@ -3,14 +3,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.loginalumnos;
-
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
  *
  * @author bryanlegrand
  */
-public class Profesor {
+public class Profesor implements Serializable {
+    
     private String nombre;
     private String apellido;
     private String usuario;
@@ -19,6 +20,10 @@ public class Profesor {
     private String especialidad;
     private  ArrayList<Clase> clasesAsignadasProfesor = new ArrayList<>();
     
+    
+    public Profesor() {
+        
+    }
     
     
     /**

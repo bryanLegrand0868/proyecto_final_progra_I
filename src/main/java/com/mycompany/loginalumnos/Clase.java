@@ -4,6 +4,7 @@
  */
 package com.mycompany.loginalumnos;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -11,7 +12,8 @@ import java.util.Date;
  *
  * @author bryanlegrand
  */
-public class Clase {
+public class Clase implements Serializable {
+    
     private String nombre;
     private String id;
     private String profesorasignado;
@@ -22,6 +24,10 @@ public class Clase {
     private Date fechaInicio;
     private Date fechaFin;
     private String seccion;
+    
+    public Clase() {
+        
+    }
     
     /**
      * @return the nombre
